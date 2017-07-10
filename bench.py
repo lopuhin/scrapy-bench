@@ -78,7 +78,7 @@ def cli(ctx, n_runs, only_result, upload_result):
 def bookworm(obj):
     """Spider to scrape locally hosted site"""
     workpath = os.path.join(os.getcwd(), "books")
-    arg = "scrapy crawl followall -o items.csv"
+    arg = "python run_bookworm.py -o items.csv"
     calculator(
         "Book Spider",
         arg,
